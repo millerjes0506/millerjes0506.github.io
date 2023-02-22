@@ -1,4 +1,14 @@
 body 
+{background-color: #FFF9F7;}
+h1 {color:#391A0A;}
+h3 {color: #D6759B}
 
-h1 {color:#ff6699;}
-
+a {
+    background-color: #CBC1B7;
+    padding: 10px;
+    }
+ a {   
+    border-style: dashed;
+    border-color: black;
+   
+}
