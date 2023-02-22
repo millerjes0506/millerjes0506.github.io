@@ -1,0 +1,12 @@
+body
+ul li {
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    border: 2px solid black;
+    list-style-type:none
+    padding: 25px 25px 25px 25px;
+    margin-top: 0px;
+    margin-left: 5px
+    
+}
