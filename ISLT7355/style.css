@@ -1,0 +1,35 @@
+body 
+{background-color: #FFF9F7;}
+h1 {color:#391A0A;}
+h3 {color: #D6759B;}
+
+
+div.reflection
+{
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 20px;
+}
+h1 {color: #D6759B;}
+h3 {color: #391A0A;}
+
+div.reflection header
+{
+    text-align: center;
+}
+
+div.reflection section:first-of-type p:first-of-type::first-letter{
+    text-indent: 0em;
+    color: #D6759B;
+    font-size: 50px;
+    font-size: 5rem;
+    line-height: 12px;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    text-align: left;
+    float: left;
+}
+
+div.reflection .indent{
+    text-indent: 2em;
+}

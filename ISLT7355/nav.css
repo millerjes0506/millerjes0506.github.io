@@ -1,0 +1,59 @@
+div.nav
+nav{
+    background: grey;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+    text-decoration:  none;
+    text-align: center;
+    color: black;
+    display: block;
+    padding: 15px 15px 15px 15px;
+   
+}
+nav ul li{
+    width: 150px;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+nav ul li{
+    margin-bottom: 2px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+nav li{
+    flex: 1 1 0;
+}
+
+nav a:link{
+    background-color:#c1c1bf;
+}
+nav a:hover, nav a:focus{
+    background-color: #fffaf7;
+}
+nav a:active{ /*this turns color when the link is pressed*/
+    background-color: #ffc3d4;
+}
+
+nav ul li ul{
+    position: absolute;
+    margin-top: 0;
+    display: none;
+    padding: 5px;
+}
+
+nav ul li ul a{
+    padding: 8px 14px
+}
+
+nav ul li:hover ul{
+    display: block;}
+
