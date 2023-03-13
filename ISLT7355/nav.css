@@ -1,17 +1,32 @@
-div.nav
-nav{
-    background: grey;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+.header{
+    background-color: #c1c1bf;
+    margin-top: 10px;
+}
+
+.logo{
+    float: left;
+    display: inline-flex;
+    height: 100px;     
+}
+
 nav ul{
     list-style-type: none;
     padding: 0;
 }
 nav a{
+    clear: right;
     text-decoration:  none;
     text-align: center;
     color: black;
     display: block;
     padding: 15px 15px 15px 15px;
+
    
 }
 nav ul li{
@@ -23,27 +38,22 @@ nav ul li{
 }
 nav ul li{
     margin-bottom: 2px;
+    color:#fff;
 }
 
 nav ul{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: flex-end;
 }
 nav li{
     flex: 1 1 0;
 }
 
-nav a:link{
-    background-color:#c1c1bf;
-}
-nav a:hover, nav a:focus{
-    background-color: #fffaf7;
-}
-nav a:active{ /*this turns color when the link is pressed*/
-    background-color: #ffc3d4;
-}
 
 nav ul li ul{
+    background-color: #c1c1bf;
     position: absolute;
     margin-top: 0;
     display: none;
@@ -54,6 +64,82 @@ nav ul li ul a{
     padding: 8px 14px
 }
 
+.navbar {
+    background-color: #c1c1bf;
+    float: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    flex: 0 1 1;
+}
+
+.nav-list .list-item{
+    display: inline-block;
+    align-items: center;
+    padding: 20px 10px;
+    }
+
+.list-item a{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #ffc3d4;
+    transition: .9s;
+    text-transform: uppercase;
+}
 nav ul li:hover ul{
     display: block;}
 
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+.hide li a{
+    display: none;
+}*/
+
+/* Mobile Menu 
+@media only screen and (max-width:500px){
+            
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+nav{
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+nav ul li a{
+   display: block;
+border-bottom: 1px #EAEAEB;
+margin: 0;
+  
+}
+
+#toggle:checked + nav{
+    display: block;
+}
+
+}*/
