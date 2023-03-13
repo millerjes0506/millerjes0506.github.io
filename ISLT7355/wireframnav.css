@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 100;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 2px solid red;
+}
+
+.logo {
+    width: 200px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+
+/* this is for ul tag */
+.menu {
+    float: right;
+}
+
+.menu li{
+    float: left;
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    flex: 1 1 0;
+    }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+    .wrapper div {
+        background: #eee;
+        padding: 1em;
+    }
+
+    .wrapper div:nth-child(odd){
+        backgound: #ddd;
+    }

@@ -1,0 +1,128 @@
+body{
+    padding: 10px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: 7% 5em auto 10em;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-areas:"header header header" "name name name" "main main main" "footer footer footer";
+    grid-auto-columns: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+header{
+    grid-area: header;
+    display: flex;
+}
+
+name{
+    grid-area: name;
+}
+
+.name-title {
+    margin-top: -10px;
+    color: #ffc3d4;
+    text-align: center;
+    font-family: 'Tenor Sans';
+    font-size: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    height: auto;
+    display: grid;
+    grid-template-columns: 5fr 5fr 3fr 5fr 5fr;
+    grid-template-rows: 5fr 3fr;
+    grid-template-areas: "intro intro headshot education education" "resume resume . images images"; 
+    grid-gap: 1em;
+}
+
+.intro{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    grid-area: intro;
+}
+.education ul{
+    list-style-type: none;
+    padding: 1em;
+    line-height: 2;
+}
+
+.education{
+    grid-area: education;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: center;
+}
+
+.education h4{
+    font-family: 'Tenor Sans';
+    font-size: 22px;
+    text-align: center;
+    color: #3d4e3c;
+}
+
+.headshot{
+    text-align: center;
+    height: 300px;
+    grid-area: headshot;
+    
+}
+
+.Random-Img1{
+    grid-area: random-Img1;
+}
+
+.random-Img2{
+    grid-area: random-Img2;
+}
+
+
+resume{
+    grid-area: resume;
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "resume-dl resume-video";
+}
+
+.resume-dl{
+    padding: 1em;
+    grid-area: resume-dl;
+    object-fit: contain;
+}
+
+.resume-video{
+    grid-area: resume-video;
+}
+
+images{
+    grid-area: images;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "Random-Img1 Random-Img2";
+}
+
+.Random-Img1{
+    grid-area: Random-Img1;
+    object-fit: 100%;
+}
+
+.random-Img2{
+    grid-area: Random-Img2;
+}
+
+
+footer{
+    grid-area: footer;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
