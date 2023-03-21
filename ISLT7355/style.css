@@ -26,8 +26,11 @@ header{
     grid-area: header;
 }
 
-name{
+.name{
     grid-area: name;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .name-title {
