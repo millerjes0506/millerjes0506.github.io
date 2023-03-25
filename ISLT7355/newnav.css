@@ -1,0 +1,154 @@
+@font-face{
+    font-family: myFont;
+    src:url(Montserrat.ttf);
+    font-family: head;
+    src:url(Lovelo.otf);
+    font-family: logo;
+    src:url(HonthanySignature.ttf);
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    font-family: myFont;
+    font-size: 22px;
+    font-weight: 400;
+    background: #c1c1bf;
+    margin-top: 15px;
+    box-shadow: 0 5px 10px #686868;
+    display: flex;
+    align-items: center;
+    justify-content: center space-between;
+}
+
+.logo {
+    float: left;
+    display: inline-flex;
+    width: 250px;
+    margin-left: -115px;
+    margin-bottom: -15px;
+    margin-top: -8px;
+}
+
+.nav ul li a.active{
+    color:#ffc3d4;
+    }
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    color:#fff;
+    top: 0;
+    right: 0;
+    margin: 18px 40px 0 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+header nav{
+ 
+    float: right;
+    display: none;
+    
+}
+
+header nav ul{
+    list-style: none;   
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: 70px;
+}
+
+header nav ul li a {
+    font-family: head;
+    clear: right;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    
+}
+
+header nav ul li a:hover {
+    color: #ffc3d4;
+    transition: .9s;
+}
+
+header nav ul li .hide{
+    position: absolute;
+    width: 100%;
+    
+}
+
+header nav ul li ul .hide a{
+    color:#fff;
+    display: block;
+    text-align: center;
+    display: none;
+}
+
+header nav ul li:hover .hide a{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.nav-toggle:checked ~ nav{
+    display: block;
+    
+}
+
+@media only screen and (max-width: 500px) {
+
+.nav-toggle-label{
+        display: block;
+        cursor: pointer;
+    }
+
+.logo {
+    float: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+header .container nav ul li a {
+    float: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    background-color: #c1c1bf;
+    opacity: .2;
+}
+
+#toggle:checked + header .container nav ul li a{
+    display: block;
+}
+
+}
