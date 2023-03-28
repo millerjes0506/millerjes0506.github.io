@@ -309,9 +309,9 @@ footer{
     }
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 10pt;
-        color: black;
+        font-family: Arial, Helvetica, sans-serif !important;
+        font-size: 10pt !important;
+        color: black !important;
     }
 
     .name-title {
@@ -325,6 +325,11 @@ footer{
         grid-template-rows: 20% 20% 20% 20% 20%;
         gap: none;
         }
+        
+.Intro {
+    border: 3px solid black;
+}
+
 
     @page {
         margin: 2.54cm;
