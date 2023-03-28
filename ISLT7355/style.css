@@ -1,3 +1,108 @@
+@font-face{
+    font-family: myFont;
+    src:url(Montserrat.ttf);
+    font-family: head;
+    src:url(Lovelo.otf);
+    font-family: logo;
+    src:url(HonthanySignature.ttf);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.PrintName{
+    display: none;
+}
+
+.name-title{
+    color: #ffc3d4;
+    text-align: center;
+    font-family: head;
+    font-size: 48px;
+    margin-top: 1.5rem;
+    margin-bottom: -4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3{
+    font-family: myFont;
+    font-size: 18px;
+    text-align: center;
+    color: #686868;
+    margin-bottom: 1em;
+}
+
+.h4{
+font-family: myFont;
+font-size: 16px;
+text-align: center;
+color: #c1c1bf;
+margin-top: 1em;
+}
+
+.AboutMain {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat (6, 1fr);
+}
+
+.headshot{
+    width: 100%;
+    text-align: center;  
+    grid-column-start: 4;
+    grid-row-start: 2
+}
+
+.resume_img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.Random-Img1{
+    width: 100%  
+}
+
+.random-Img2{
+ width: 100%;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-col-span-3 {
+    grid-column: span 3;
+}
+
+.grid-col-span-4 {
+    grid-column: span 4;
+}
+
+.grid-col-span-5 {
+    grid-column: span 5;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+.quote {
+    display: grid;
+    justify-content: center;
+}
+
+.footer{
+    width: 100vh;
+    justify-content: center;
+}
+
+
+
+/*
 body{
     padding: 10px;
     display: grid;
@@ -5,21 +110,6 @@ body{
     grid-template-rows: 5em 5em auto 5em 2em;
     grid-template-columns: 2fr 4fr 2fr;
     grid-template-areas:"header header header" "name name name" "main main main" "quote quote quote" "footer footer footer";
-}
-
-.h3{
-        font-family: 'Montserrat';
-        font-size: 18px;
-        text-align: center;
-        color: #c1c1bf;
-        margin-bottom: 1em;
-}
-
-.h4{font-family: 'Montserrat';
-    font-size: 16px;
-    text-align: center;
-    color: #c1c1bf;
-    margin-top: 1em;
 }
 
 header{
@@ -37,7 +127,7 @@ header{
     margin-top: -10px;
     color: #ffc3d4;
     text-align: center;
-    font-family: 'Tenor Sans';
+    font-family: head;
     font-size: 75px;
     display: flex;
     align-items: center;
@@ -56,6 +146,10 @@ header{
     grid-gap: 1em;
 }
 
+.list-item{
+    font-family: myFont;
+}
+
 .main2{
     grid-area: main;
     display: flex;
@@ -68,7 +162,7 @@ header{
 }
 
 .intro{
-    font-family: 'Montserrat';
+    font-family: myFont;
     font-size: 14px;
     grid-area: intro;
     text-align: justify;
@@ -77,7 +171,7 @@ header{
 }
 
 .home{
-    font-family: 'Montserrat';
+    font-family: myFont;
     font-size: 14px;
     grid-area: intro;
     text-align: center;
@@ -101,16 +195,11 @@ header{
 .education{
     grid-area: education;
     height: 350px;
-    font-family: 'Montserrat';
+    font-family: myFont;
     font-size: 14px;
     text-align: center;
 }
 
-.headshot{
-    grid-area: headshot;
-    height: 350px;
-    text-align: center;  
-}
 
 resume{
     grid-area: resume;
@@ -121,25 +210,19 @@ resume{
     grid-template-areas: "resume-dl resume-video . random-Img1 random-Img2";
 }
 
-.resume-dl {
-    display: block;
-    grid-area: resume-dl;
-    background: url('Jessica_Resume_Image.png');
-    background-size: cover;
-    height: 100%;
-}
 
 .resume-video{
+    display: none;
     grid-area: resume-video;
 }
 
 .Random-Img1{
-    display: block;
-    grid-area: random-Img1;
-    height: 100%;    
+    display: none;
+    grid-area: random-Img1;   
 }
 
 .random-Img2{
+    display: none;
     grid-area: random-Img2;
 }
 
@@ -148,22 +231,28 @@ resume{
 }
 
 
-quote{
+.quote{
     grid-area: quote;
+    font-family: myFont;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
-    color: #fff;
+    color: #686868;
     grid-area: footer;
-    font-family: 'Montserrat';
+    font-family: myFont;
     font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: url("images/FooterBackground.png");
     background-size: cover;
-}
+}*/
 
+/*
 @media all and (max-width: 800px) {
     p{
         font-size: 1.5rem;
@@ -175,7 +264,87 @@ footer{
     p{
         font-size: 1.25rem;
     }
-}
-    
+}*/
+
+@media print{
+
+    /*Hide Items*/
+
+    .logo {
+        display: none !important;
+    }
+
+    body .header nav {
+        display: none !important;
+    }
+
+    .nav-icon {
+        display: none !important;
+    }
+
+    .header {
+        display: none !important;
+    }
+
+    .headshot {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    .resume-video {
+        display: none;
+    }
+
+    /*Things to Show/Print*/
+
+    .PrintName{
+        display: flex;
+        font-family: logo;
+        font-size: 10pt;
+        color: black;
+        text-align: center;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: black;
+    }
+
+    .name-title {
+        margin-top: -100px;
+    }
+
+
+    .AboutMain {
+        display: grid; 
+        grid-template-columns: auto;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        gap: none;
+        }
+
+        .intro{
+            color: black;
+            font-size: 10pt;
+            font-family: Georgia, serif;
+
+        }
+
+        .education{
+            color: black;
+            font-size: 12pt;
+            font-family: Georgia, serif;
+        }
+
+    @page {
+        margin: 2.54cm;
+    }
+} 
+
+
+
 
 
