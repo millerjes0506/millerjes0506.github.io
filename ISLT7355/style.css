@@ -326,19 +326,6 @@ footer{
         gap: none;
         }
 
-        .intro{
-            color: black;
-            font-size: 10pt;
-            font-family: Georgia, serif;
-
-        }
-
-        .education{
-            color: black;
-            font-size: 12pt;
-            font-family: Georgia, serif;
-        }
-
     @page {
         margin: 2.54cm;
     }
