@@ -1,108 +1,156 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
+@font-face{
+    font-family: myFont;
+    src:url(Montserrat.ttf);
+    font-family: head;
+    src:url(Lovelo.otf);
+    font-family: logo;
+    src:url(HonthanySignature.ttf);
+}
+body{
     margin: 0;
-}
-
-.header{
-    background-color: #c1c1bf;
-    width: 100%;
-}
-
-
-.logo{
-    float: left;
-    display: inline-flex;
-    height: 110px;     
-    margin-top: -15px;
-    margin-bottom: -25px;
-}
-
-.label
-
-.navbar {
-    background-color: #c1c1bf;
-    float: center;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-right: 15px;
+    font-family: myFont;
     font-size: 20px;
+    background-color: white;
 }
 
-.navbar .nav-list a.active{
-color:#ffc3d4;
+
+h1 {
+    display: none;
 }
 
-.nav-list {
-    background-color: transparent;
-    height: 100%;
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-list .list-item{
-display: inline-block;
-font-size: 20px;
-align-items: center;
-padding: 20px 10px;
-}
-
-.nav-list .list-item a{
-    clear: right;
-    font-size: 25px;
+/*Navigation Stuff*/
+a{
     color: #fff;
-    text-decoration: none;
-    padding: 30px 10px 30px 30px;
 }
 
-.nav-list .list-item a:hover{
+.header {
+    height: 62px;
+    margin-top: 10px;
+    background-color: #c1c1bf;
+    box-shadow: 1px 1px 4px 0 #686868;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #c1c1bf;
+    
+}
+
+.header ul a{
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.header ul a:hover{
     color: #ffc3d4;
+    text-decoration: underline;
     transition: .9s;
 }
 
-label {
+.header nav .menu li .active{
+    color:#ffc3d4;
+    text-decoration: underline;
+    }
+
+.header .logo {
+    float: left;
+    display: block;
+    width: 250px;
+    padding: 10px 20px;
+    margin-top: -17px;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
     position: relative;
+    padding: 20px 20px;
+    color: #fff;
     float: right;
-    display: flex;
-    align-items: right;
-    justify-items: center;
-    font-size: 25px;
-    display: none;
-    width: 26px;
+    cursor: pointer;
 }
 
-#toggle {
+.header .menu-icon .nav-icon{
+    position: relative;
+}
+
+.menu-btn {
     display: none;
 }
 
-
-@media screen and (max-width: 500px) {
-    label{
-        display: block;
-        cursor: pointer;
-    }
-
-    .nav-list{
-        background-color: #c1c1bf;
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-
-    .nav-list .list-item {
-        display: block;
-        margin: 0;
-    }
-
-    #toggle:checked + .nav-list{
-        display: flex;
-        flex-direction: column;
-    }
+.header .menu-btn:checked ~ nav .menu {
+    max-height: 240px;
     
-
 }
+
+header nav ul li .hide{
+    position: absolute;
+    width: 100%;
+    
+}
+
+header nav ul li ul .hide a{
+    color:#fff;
+    display: block;
+    text-align: center;
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+
+.hide {
+    display: none;
+}
+
+/*Desktop/IPAD Display*/
+@media (min-width: 48em){
+    .header li{
+        float: left;
+   }
+
+   .header .nav ul li{
+    background: transparent;
+   }
+
+   .header ul{
+    background-color: #c1c1bf;
+    opacity: 1;
+   }
+
+   .header li a{
+    padding: 20px 30px;
+    color:#fff;
+    font-size: 26px;
+   }
+
+   .header .menu {
+    background-color: transparent;
+    clear: none;
+    float: right;
+    max-height: none;
+   }
+
+   .header .menu-icon {
+    display: none;
+   }
+}
+
+/*Printing*/
