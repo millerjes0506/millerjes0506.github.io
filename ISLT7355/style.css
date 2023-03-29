@@ -95,12 +95,28 @@ margin-top: 1em;
     justify-content: center;
 }
 
-.footer{
-    width: 100vh;
+footer {
+    background-image: url(Images/FooterBackground.png);
+    color: white;
+    display: flex;
+    text-align: justify;
     justify-content: center;
 }
 
+footer ul {
+    list-style: none;
+    text-align: justify;
+}
 
+.main1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.icon {
+    height: 20px;
+}
 
 /*
 body{
@@ -135,16 +151,7 @@ header{
 }
 
 
-.main1{
-    grid-area: main;
-    display: flex;
-    height: auto;
-    display: grid;
-    grid-template-rows: 350px 3fr;
-    grid-template-columns: 5fr 5fr 2fr 5fr 5fr;
-    grid-template-areas: "intro intro headshot education education" "resume resume resume resume resume"; 
-    grid-gap: 1em;
-}
+
 
 .list-item{
     font-family: myFont;
