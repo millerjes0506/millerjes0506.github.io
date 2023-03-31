@@ -96,6 +96,7 @@ margin-top: 1em;
 }
 
 footer {
+    width: auto;
     background-image: url(Images/FooterBackground.png);
     color: white;
     display: flex;
@@ -115,7 +116,19 @@ footer ul {
 }
 
 .icon {
-    height: 20px;
+    height: 15px;
+}
+
+.zoom {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0.3s; z-index: 10;
+}
+
+.icon:hover + .zoom {
+    width: 75px;
+    background-color: #686868: 
 }
 
 /*
@@ -341,8 +354,3 @@ footer{
         margin: 2.54cm;
     }
 } 
-
-
-
-
-
