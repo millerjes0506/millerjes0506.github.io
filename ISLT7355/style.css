@@ -12,6 +12,46 @@ img {
     display: block;
 }
 
+.button {
+    display: inline-flex;
+    height: 50px;
+    padding: 0;
+    background: #c1c1bf;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hiddin;
+    font-family: myFont;
+    font-size: 32px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 1px 1px 4px 0 #686868;
+}
+
+.button:hover{
+    background: #ffc3d4;
+}
+
+.button:active {
+    background: #686868;
+}
+
+.button__text, .button__icon {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 100%;
+    margin-left: 20px;
+    color: #ffff;
+}
+
+.button__icon {
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.08);
+}
 
 .PrintName{
     display: none;
@@ -34,6 +74,7 @@ img {
     text-align: center;
     color: #686868;
     margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 .h4{
@@ -96,7 +137,8 @@ margin-top: 1em;
 }
 
 footer {
-    width: auto;
+    margin-top: 1em;
+    padding: 20px;
     background-image: url(Images/FooterBackground.png);
     color: white;
     display: flex;
@@ -131,6 +173,108 @@ footer ul {
     background-color: #686868; 
 }
 
+/*Project Page Sections*/
+.Nearpod {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.Jamboard {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.Google {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+/*Project Discriptions*/
+
+.Project_Discriptions {
+    font-family: myFont;
+}
+
+.Project-Scroll {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid white;
+
+}
+
+/*.cover::before{
+    position: relative;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, grey, transparent);
+}
+
+.cover::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, grey, transparent);
+}*/
+
+.cover {
+    margin-top: -100px;
+    position: relative;
+    width: 100%;
+    height: 55%;
+}
+
+.scroll-images {
+    width: 100%;
+    height: 215px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.child {
+    min-width: 600px;
+    height: 350px;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid #c1c1bf;
+    overflow: hidden;
+}
+
+.child-img {
+    width: auto;
+    height: auto;
+
+}
+
+/*Reflection*/
+.Career-name-title {
+    color: #ffc3d4;
+    text-align: center;
+    font-family: head;
+    font-size: 48px;
+    margin-top: 2rem;
+    margin-bottom: -4rem;
+    align-items: center;
+    justify-content: center;
+
+}
 /*
 body{
     padding: 10px;

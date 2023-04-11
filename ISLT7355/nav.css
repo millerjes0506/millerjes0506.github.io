@@ -31,6 +31,7 @@ a{
     position: fixed;
     width: 100%;
     z-index: 3;
+    margin-bottom: 10px;
 }
 
 .header ul {
@@ -118,6 +119,30 @@ header nav ul li ul .hide a{
 
 .hide {
     display: none;
+}
+
+.dropdown {
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0 #686868;
+}
+
+nav .menu .projects ul {
+    display: none;
+}
+
+ul .dropdown li:nth-child(2) {
+    background-color: #D3D3D3;
+}
+
+nav .menu .projects:hover ul {
+    display: block;
+   
+}
+
+nav .menu .projects ul:hover li{
+    display: block;
+    
 }
 
 /*Desktop/IPAD Display*/

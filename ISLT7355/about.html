@@ -19,6 +19,7 @@ Tested: Spring 2023
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico">
         <title>About Me</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
@@ -61,7 +62,11 @@ Tested: Spring 2023
                 <img src="headshot.jpg" alt="headshot" class="headshot">
         </div>
 
-               
+        <button type="button" class="button" onclick="location.href='MillerResume.pdf'">
+            <span class="button__text">Resume</span>
+            <span class="button__icon"><ion-icon name="document-outline"></ion-icon></span>
+           </button>
+
         <div class="education">
                     <h3 class="h3">My Education</h3>
                     <ul>
@@ -71,17 +76,13 @@ Tested: Spring 2023
                     </ul>
                     
                </div>
-
                <div></div>
-               <a class="resume-dl grid-col-span-2" href="MillerResume.pdf"><img src ="Jessica_Resume_Image.png" alt="Resume" class="resume_img"></a>
-               <div class="resume-video">
-                
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bIaGEFvd1Ms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
                 </div>      
-                  
+                  <!--
                 <div class="Random-Img1 grid-col-span-2"><img src="Jess_Chad.jpg" alt="Husband" class="Random-Img1"></div>
                <div class="Random-Img2"><img src="Family2.jpg" alt="FamilyPicture" class="Random-Img2"></div>
+                  -->
            
           
             
@@ -89,7 +90,13 @@ Tested: Spring 2023
             <div class="quote">
                     <blockquote>"Education is not the filling of a pot but the lighting of a fire." –W.B. Yeats</blockquote>
             </div>
-        <div class="fotter grid-col-span-3">
-        Written By: Jessica Miller - jlmdtx@umsystem.edu - &copy;2023 Jessica Miller</div>
+            <footer>
+                
+                Written By: Jessica Miller &nbsp; &nbsp;  <img src="Images/mail.png" alt="email" class="icon"> &nbsp; &nbsp; <img src="Images/mail.png" alt="email" class="zoom"> jlmdtx@umsystem.edu &nbsp; &nbsp; <img src="Images/call-phone.png" alt="phone" class="icon">  <img src="Images/call-phone.png" alt="phone" class="zoom"> &nbsp; &nbsp; 1+888-888-8888 &nbsp; &nbsp; 
+                &copy;2023 Jessica Miller
+                
+            </footer>
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
