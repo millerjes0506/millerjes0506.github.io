@@ -208,6 +208,37 @@ footer ul {
 
 }
 
+/*Table Style*/
+
+table {
+    width: 100%;
+border-collapse: collapse;
+border: 3px solid #686868;
+}
+
+thead {
+    font-family: myFont;
+    text-align: center;
+    background-color: #c1c1bf;
+    color: white;
+}
+
+table td {
+    border: 1px solid #686868;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+table tr:nth-child(odd) td {
+    background-color: #ffc3d4;
+}
+
+/*.AboutMain {
+    overflow: scroll;
+}*/
+
+
+
 /*.cover::before{
     position: relative;
     content: "";
@@ -498,3 +529,26 @@ footer{
         margin: 2.54cm;
     }
 } 
+
+@media screen and (max-width: 480px) {
+    .table-scroller {
+        overflow-x: auto;
+        width: 320px;
+    }
+
+    tr {
+        font-size: 12px;
+    }
+
+    table {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+thead, .Col-Hide{
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+    }
+}
