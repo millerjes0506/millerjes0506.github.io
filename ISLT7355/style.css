@@ -306,6 +306,49 @@ table tr:nth-child(odd) td {
     justify-content: center;
 
 }
+
+/*Contact Page*/
+
+.ContactMain {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form-Style {
+    background-color: #c1c1bf;
+    font-family: myFont;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    max-width: 800px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px 0 #686868;
+}
+
+
+
+.top-form, .middle-form, .bottom-form {
+    width: 100%;
+    margin: 10px 0;
+}
+
+input:required {
+    border: 3px solid #ffc3d4;
+}
+
+input:valid {
+    border: 1px solid #686868;
+}
+
 /*
 body{
     padding: 10px;
@@ -419,13 +462,13 @@ resume{
 .random-Img2{
     display: none;
     grid-area: random-Img2;
-}
+}*/
 
 .paragraph{
     padding: 0.5em;
 }
 
-
+/*
 .quote{
     grid-area: quote;
     font-family: myFont;
@@ -544,11 +587,22 @@ footer{
         margin-left: 10%;
         margin-right: 10%;
     }
-thead, .Col-Hide{
+thead{
     position: absolute;
     left: -9999px;
     top: -9999px;
 }
 
     }
+
+/*Contact Page Media*/
+
+.ContactMain .name-title {
+    padding-left: 1em;
+}
+
+.Form-Style {
+    height: 100%;
+    margin-top: 30px;
+    width: 100%;
 }
