@@ -261,6 +261,10 @@ table tr:nth-child(odd) td {
     background-image: linear-gradient(90deg, grey, transparent);
 }*/
 
+.ProjectLink {
+    color:#686868;
+}
+
 .cover {
     margin-top: -100px;
     position: relative;
