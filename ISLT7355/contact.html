@@ -52,7 +52,7 @@ Tested: Spring 2023
             <h2>Contact Me</h2>
             </div>   
 <div class="Form-Style">
-    <form>
+    <form action="mailto:jlmdtx@umsystem.edu?Subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
         <div class="first-name">
         <label for="First-Name">First Name</label>
         <input type="text" name="First-Name" id="First-Name" placeholder="First Name" required autofocus>
@@ -67,11 +67,10 @@ Tested: Spring 2023
         </div>
         <div class="bottom-form">
         <label for="Message">Message</label>
-        <textarea id="Message" placeholder="Your Message" required></textarea>
+        <textarea id="Message" name="Message" placeholder="Enter your message" required></textarea>
         </div>
         
-<input type="submit">
-
+        <button type="submit" id="submit">Send</button>
     </form>
 </div>
 </main>
