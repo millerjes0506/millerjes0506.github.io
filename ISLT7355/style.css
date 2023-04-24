@@ -1,10 +1,6 @@
 @font-face{
     font-family: myFont;
     src:url(Montserrat.ttf);
-    font-family: head;
-    src:url(Lovelo.otf);
-    font-family: logo;
-    src:url(HonthanySignature.ttf);
     font-family: Header;
     src:url(PaytoneOne-Regular.ttf);
 }
@@ -22,7 +18,7 @@ img {
     border: none;
     outline: none;
     border-radius: 5px;
-    overflow: hiddin;
+    overflow: hidden;
     font-family: myFont;
     font-size: 32px;
     font-weight: 500;
@@ -103,44 +99,6 @@ footer ul {
     text-align: justify;
 }
 
-/**********Index Style**********/
-.index-bod {
-    background-color: #fffaf7;
-}
-
-
-.home {
-    padding: 1em;
-}
-
-/**********About Style**********/
-
-.AboutMain {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.headshot{
-    width: 100%;
-    text-align: center;  
-    grid-column-start: 4;
-    grid-row-start: 2
-}
-
-.resume_img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-}
-
-.Random-Img1{
-    width: 100%  
-}
-
-.random-Img2{
- width: 100%;
-}
-
 .grid-col-span-2 {
     grid-column: span 2;
 }
@@ -161,18 +119,88 @@ footer ul {
     grid-row: span 2;
 }
 
-.quote {
-    display: grid;
-    justify-content: center;
+/**********Index Style**********/
+
+.index-bod {
+    background-color: #fffaf7;
 }
-
-
 
 .main1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
 }
+
+.home {
+    padding: 1em;
+}
+
+/**********About Style**********/
+
+.about-bod {
+    background-color: #fffaf7;
+    height: 100vh;
+}
+
+.AboutMain {
+    padding: 1em;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.headshot{
+    height: 100%;
+    text-align: center;  
+    filter: drop-shadow(.5em .5em .75em #686868);
+}
+
+/*Table Style*/
+
+table {
+width: 100%;
+border-collapse: collapse;
+border: 3px solid #686868;
+}
+
+.table-scroller .Table-Title {
+    font-family: myFont;
+    color: #686868;
+    font-size: 36px;
+}
+
+thead {
+    font-family: myFont;
+    text-align: center;
+    background-color: #c1c1bf;
+    color: white;
+}
+
+table td {
+    border: 1px solid #686868;
+    padding: 4px 8px;
+    text-align: center;
+}
+
+table tr:nth-child(odd) td {
+    background-color: #ffc3d4;
+}
+
+.quote {
+    font-family: Header;
+    display: grid;
+    justify-content: center;
+}
+
+
+
 
 .icon {
     display: inline-block;
@@ -219,30 +247,7 @@ footer ul {
 
 }
 
-/*Table Style*/
 
-table {
-    width: 100%;
-border-collapse: collapse;
-border: 3px solid #686868;
-}
-
-thead {
-    font-family: myFont;
-    text-align: center;
-    background-color: #c1c1bf;
-    color: white;
-}
-
-table td {
-    border: 1px solid #686868;
-    padding: 4px 8px;
-    text-align: center;
-}
-
-table tr:nth-child(odd) td {
-    background-color: #ffc3d4;
-}
 
 /*.AboutMain {
     overflow: scroll;
@@ -476,24 +481,7 @@ button[type="submit"] {
 
 /*
 @media screen and (max-width: 480px) {
-    .table-scroller {
-        overflow-x: auto;
-        width: 320px;
-    }
-
-    tr {
-        font-size: 12px;
-    }
-
-    table {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-thead{
-    position: absolute;
-    left: -9999px;
-    top: -9999px;
-}
+   
 
     }
 
@@ -503,9 +491,20 @@ thead{
 /**********START OF MOBILE STUFF***********/
 
 @MEDIA ONLY SCREEN AND (MAX-WIDTH:786PX) {
+/*********ALL Pages ******/
+
+.icon {
+    display: none
+}
+
+footer {
+   font-size: 8px;
+}
+
+
 /*********Index Page ******/
 
-.index-bod{
+.index-bod {
     max-height: 100vh;
 }
 .main1 {
@@ -522,15 +521,38 @@ thead{
     height: auto;
 }
 
-.icon {
-    display: none
+/*********About Page ******/
+
+.about-bod {
+    max-height: 100vh;
 }
 
-footer {
-   font-size: 8px;
+.AboutMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-*/
+.table-scroller {
+    width: 320px;
+}
+
+tr {
+    font-size: 12px;
+}
+
+thead{
+position: absolute;
+left: -9999px;
+top: -9999px;
+}
+
+iframe {
+    height: auto;
+    width: auto;
+}
+
 
 /*Contact Page Media*/
 
@@ -607,14 +629,7 @@ header{
     grid-template-columns: 33% 33% 33%;
 }
 
-.intro{
-    font-family: myFont;
-    font-size: 14px;
-    grid-area: intro;
-    text-align: justify;
-    line-height: 1.5;
-    height: 350px;
-}
+
 
 .home{
     font-family: myFont;
