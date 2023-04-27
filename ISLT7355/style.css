@@ -135,6 +135,20 @@ footer ul {
     font-size: 1.5em;
     background-color: rgba(0, 0, 0, 0.08);
 }
+
+.family{
+    height: 100%;
+    text-align: center;  
+    filter: drop-shadow(.5em .5em .75em #686868);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /**********About Style**********/
 .PrintName{
     display: none;
@@ -161,6 +175,10 @@ footer ul {
 .headshot{
     height: 100%;
     text-align: center;  
+    filter: drop-shadow(.5em .5em .75em #686868);
+}
+
+.video {
     filter: drop-shadow(.5em .5em .75em #686868);
 }
 
@@ -456,7 +474,7 @@ button[type="submit"] {
 
 /**********START OF MOBILE STUFF***********/
 
-@MEDIA ONLY SCREEN AND (MAX-WIDTH:786PX) {
+@MEDIA ONLY SCREEN AND (MAX-WIDTH:800PX) {
 /*********ALL Pages ******/
 
 .icon {
@@ -485,6 +503,7 @@ footer {
 .family {
     padding: 5px;
     height: auto;
+    width: auto;
 }
 
 /*********About Page ******/
@@ -517,6 +536,11 @@ top: -9999px;
 iframe {
     height: auto;
     width: auto;
+}
+
+.video
+{
+    filter: drop-shadow(0 0 0)
 }
 
 /*********Project Page ******/
@@ -562,6 +586,14 @@ iframe {
 }
 
 /*********Reflection Page ******/
+
+.reflect-bod {
+    max-height: 100vh;
+}
+
+.ContactMain .h3 {
+    padding: 1em;
+}
 
 
 /*********Contact Page ******/

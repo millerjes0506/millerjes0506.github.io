@@ -24,6 +24,7 @@ a{
 }
 
 .header {
+    font-family: myFont;
     height: 62px;
     margin-top: 10px;
     background-color: #c1c1bf;
@@ -35,6 +36,7 @@ a{
 }
 
 .header ul {
+    font-family: myFont;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -44,6 +46,7 @@ a{
 }
 
 .header ul a{
+    font-family: myFont;
     color: white;
     padding: 12px;
     text-decoration: none;
@@ -60,6 +63,7 @@ a{
 }
 
 .header nav .menu li .active{
+    font-family: myFont;
     color:#ffc3d4;
     text-decoration: underline;
     }

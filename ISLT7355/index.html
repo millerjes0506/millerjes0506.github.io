@@ -43,7 +43,25 @@ Tested: 4/23/2023
                 <li><a href="reflection.html">Reflection</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-          </nav>
+            <SCRIPT LANGUAGE="JavaScript">
+                <!--
+                
+                //Bread crumb script - Kevin Lynn Brown
+                //Duplicate directory names bug fix by JavaScriptKit.com
+                //Visit JavaScript Kit (http://javascriptkit.com) for script
+                
+                var path = "";
+                var href = document.location.href;
+                var s = href.split("/");
+                for (var i=2;i<(s.length-1);i++) {
+                path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+                }
+                i=s.length-1;
+                path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+                var url = window.location.protocol + "//" + path;
+                document.writeln(url);
+                //-->
+                </script></nav>
         </header>
     
          <main class="main1">
@@ -51,20 +69,22 @@ Tested: 4/23/2023
                 <h2>Welcome</h2>
             </div>
             <div class="home">
-            I am Jessica Miller, a graduate student at the University of Missouri studying Instructional Design.  I created this website using HTML and CSS for you to gain a snippet of my capabilities.  You will learn a little about my personal life and my journey as an educator. I have also showcased some projects that I have developed along the way to help both students and educators in the classroom. My love for technology grew exponentially when schools went hybrid.  This resulted in educators being forced to design digital interactive lessons for the students.  With my tech-savvy and fun personality, I have created training materials for both in-person and video content for the flexibility and ease of professional development. I have extensive experience with Google applications, Google Classroom, Nearpod, IXL, Screencastify, and Kami.  To this day, I am still creating engaging activities in my classroom to get students to learn. I hope you enjoy my website, and please feel free to contact me.
-            
+            I am Jessica Miller, a graduate student at the University of Missouri studying Instructional Design.  I created this website using HTML and CSS for you to gain a snippet of my capabilities.  You will learn a little about my personal life and my journey as an educator. I have also showcased some projects that I have developed along the way to help both students and educators in the classroom. My love for technology grew exponentially when schools went hybrid.  This resulted in educators being forced to design digital interactive lessons for the students.  With my tech-savvy and fun personality, I have created training materials for both inperson and video content for the flexibility and ease of professional development. I have extensive experience with Google applications, Google Classroom, Nearpod, IXL, Screencastify, and Kami.  To this day, I am still creating engaging activities in my classroom to get students to learn. I hope you enjoy my website, and please feel free to contact me.
+
             <h3 class="h3">Thank you so much!</h3>
             </div>
 
-            <img src="headshot.jpg" alt="Miller Family" class="family">
+            <img src="headshot.jpg" alt="Headshot" class="family">
             
             </main>
             
             <footer>
-                
+                <div>
                 Written By: &copy;2023 Jessica Miller &nbsp; &nbsp; <img src="Images/mail.png" alt="email" class="icon"> &nbsp; &nbsp; jlmdtx@umsystem.edu &nbsp; &nbsp; <img src="Images/call-phone.png" alt="phone" class="icon"> &nbsp; &nbsp; 1+888-888-8888 &nbsp; &nbsp; 
+                </div>
                 
-            </footer>
+                <div><a href='https://www.free-counters.org/'>https://www.free-counters.org</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=b5fc7ad9143cf96259c65aab6a599dd25fe42547'></script>
+                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1023420/t/2"></script></div></footer>
     
             </body>
             </html>
